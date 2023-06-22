@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuerry</title>
+    <link href="main.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <p1>GALERIA DE FOTOS</p1>
+            <button id="button-expansao" type="click">Nova Imagem +</button>
+        </div>
+    </header>
+    <form id="form">
+        <div id="form" class="container">
+            <p2>Inserir nova imagem</p2>
+            <div class="input-image">
+                <input id="url-image" type="url" required/>
+                <button id="add" type="submit" >ADICIONAR</button>
+                <button id="cancel" type="reset" >CANCELAR</button>
+            </div>
+        </div>
+    </form>
+    <ul>
+        <li>
+            <img id="ima" src="./images/foto1.jpg" alt="Imagem aleatoria adicionada"/>
+            <div class="link">
+                <a href="./images/foto1.jpg" terget="_blank" title="Ver imagem em tamanho real"> 
+                    Ver imagem em tamanho real
+                </a>
+            </div>
+        </li>
+    </ul>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="main.js" ></script>
+</body>
+</html>
